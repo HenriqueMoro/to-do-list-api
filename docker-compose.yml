@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  to-do-list-pg:
+    image: bitnami/postgresql
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=to-do-list-api
